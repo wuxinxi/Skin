@@ -1,0 +1,6 @@
+<!--声明字体-->
+<resources>
+    <string name="app_name">Skin_1</string>
+    <string name="typeface_1">font/global.ttf</string>
+    <string name="typeface_2">font/specified.ttf</string>
+</resources>

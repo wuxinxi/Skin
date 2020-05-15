@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/textBg"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="春眠不觉晓\n 处处闻啼鸟\n 夜来风雨声\n花落知多少"
+            android:lineSpacingExtra="5dp"
+            android:layout_margin="10dp"
+            skinTypeface="@string/typeface_2"
+            android:gravity="center"
+            android:background="@color/textBg"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" tools:ignore="MissingPrefix"/>
+
+    <ImageView android:layout_width="match_parent" android:layout_height="100dp"
+               android:scaleType="fitXY"
+               android:layout_margin="10dp"
+               android:src="@drawable/bg"/>
+
+    <com.wxx.skin.app.CustomView
+            android:layout_width="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:colorInColor="@color/colorInColor"
+            app:colorOutColor="@color/colorOutColor"
+            android:layout_height="150dp"/>
+
+    <Button
+            android:id="@+id/change"
+            android:background="@color/btnColor"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:text="切换"
+            android:textColor="@color/textColor"
+            android:layout_height="50dp"/>
+
+
+    <Button
+            android:id="@+id/reset"
+            android:background="@color/btnColor"
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:text="重置"
+            android:textColor="@color/textColor"
+            android:layout_height="50dp"/>
+
+</LinearLayout>
