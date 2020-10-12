@@ -11,5 +11,9 @@ class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
 
+        val i=100L
+        val i1=java.lang.Long(100L)
+
+        print(i.equals(i1))
     }
 }

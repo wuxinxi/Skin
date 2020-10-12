@@ -5,12 +5,48 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         tools:context=".MainActivity">
 
     <Button
-            android:id="@+id/btn"
+            android:id="@+id/create"
             android:text="创建数据库"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
+
+    <Button
+            android:id="@+id/insert"
+            android:text="插入数据"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/edit"/>
+
+    <Button
+            android:id="@+id/update"
+            android:text="修改数据"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="查询"
+            android:id="@+id/query"/>
+
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="条件查询-前5条"
+            android:id="@+id/queryLimit"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="条件查询-id"
+            android:id="@+id/queryCondition"/>
+
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="条件删除-id"
+            android:id="@+id/deleteCondition"/>
+
+    <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="全部删除"
+            android:id="@+id/delete"/>
+
+
 
 </LinearLayout>

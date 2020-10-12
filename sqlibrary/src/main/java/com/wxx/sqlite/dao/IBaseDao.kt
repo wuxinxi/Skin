@@ -14,21 +14,24 @@ interface IBaseDao<T> {
     /**
      * 修改
      */
-    fun update(entity: T, where: T): Long
+    fun update(entity: T, where: T): Int
 
 
     /**
      * 删除
      */
-    fun delete(id: Long): Long
+    fun delete(where: T?=null): Int
 
     /**
      * 条件查询
      */
-    fun query(where: T): List<T>
+    fun query(where: T? = null): List<T>
 
     /**
-     * 根据id查询
+     * @param where 条件
+     * @param orderBy 排序
+     * @param startIndex 开始位置
+     * @param limit 条数，可配合startIndex使用 ,limit m,n 从第m条记录开始，往后取n条记录
      */
-    fun query(id: Long): T?
+    fun query(where: T? = null, orderBy: String? = null, startIndex: Int = 1, limit: Int = -1): List<T>
 }

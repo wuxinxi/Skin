@@ -11,7 +11,7 @@ import com.wxx.sqlite.annotation.Property
  */
 @Entity
 class RecordEntity(
-    @Id(autoincrement = true) val id: Long,
+    @Id(autoincrement = true) val id: Long?,
     val name: String,
     @Property("save_time") val time: String,
     val prices: Double,

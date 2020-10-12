@@ -7,4 +7,4 @@ package com.wxx.sqlite.annotation
  */
 @Target(AnnotationTarget.CLASS)
 @Retention(AnnotationRetention.RUNTIME)
-annotation class Entity()
+annotation class Entity

@@ -1,1 +1,2 @@
-include /*':app', ':skinlibrary', ':skin_1', ':skinapp',*/ ':sqlibrary', ':sqliteapp'
+include ':sqlibrary'
+ include ':app', ':temp'/*, ':skinlibrary', ':skin_1', ':skinapp',':sqlibrary', ':sqliteapp'*/
